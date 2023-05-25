@@ -16,6 +16,7 @@ Vagrant
 - PHP 8
 - GIT
 - Composer
+- MailHog
 
 ## Credentials
 - Ubuntu UserName/Password :- vagrant/vagrant
