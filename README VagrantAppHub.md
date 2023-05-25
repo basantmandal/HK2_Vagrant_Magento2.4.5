@@ -34,7 +34,6 @@ Add the following entry to a new line:
 
 > Note: On Windows, the hosts file is located at: c:\Windows\System32\Drivers\etc\hosts
 
-
 ## Remember
 Remember to change the `auth.json` file on the Magento Root Folder, Else Magento Specific Composer commands will not work
 

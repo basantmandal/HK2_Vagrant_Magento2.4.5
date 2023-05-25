@@ -3,6 +3,9 @@
 ## Introduction
 This Box is fully compatible for Magento 2.4.5. Includes Screenshot and Vagrantfile on how to use it.
 
+## Prerequisites
+Vagrant
+
 ## Box Contains :- 
 - Ubuntu 22.04
 - Elastic Search
@@ -17,6 +20,19 @@ This Box is fully compatible for Magento 2.4.5. Includes Screenshot and Vagrantf
 ## Credentials
 - Ubuntu UserName/Password :- vagrant/vagrant
 - MySQL :- admin/admin
+
+## Change your Host Settings
+On MacOS and Linux, open the hosts file (/etc/hosts) with elevated privileges:
+sudo nano /etc/hosts
+
+Add the following entry to a new line:
+
+```bash
+192.168.2.183 www.magento245.store
+192.168.2.183 adminer.magento245.store
+```
+
+> Note: On Windows, the hosts file is located at: c:\Windows\System32\Drivers\etc\hosts
 
 ## Remember
 Remember to change the `auth.json` file on the Magento Root Folder, Else Magento Specific Composer commands will not work
