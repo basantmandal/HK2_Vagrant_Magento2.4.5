@@ -35,10 +35,10 @@ Vagrant.configure("2") do |config|
     # config.vm.synced_folder "/var/www/magento245/app/code", "/var/www/magento245/app/code", owner: "vagrant", group: "www-data"
 
     # Provision - Clean Magento Logs
-    # config.vm.provision "shell", privileged: true, inline: <<-SHELL
-    #     echo $(tail -5000 /var/www/magento245/var/log/exception.log) >/var/www/magento245/var/log/exception.log
-    #     echo $(tail -5000 /var/www/magento245/var/log/system.log) >/var/www/magento245/var/log/system.log
-    #     echo $(tail -5000 /var/www/magento245/var/log/cron.log) >/var/www/magento245/var/log/cron.log
-    #     echo $(tail -5000 /var/www/magento245/var/log/debug.log) >/var/www/magento245/var/log/debug.log
-    # SHELL
+    config.vm.provision "shell", privileged: true, inline: <<-SHELL
+        echo $(tail -5000 /var/www/magento245/var/log/exception.log) >/var/www/magento245/var/log/exception.log
+        echo $(tail -5000 /var/www/magento245/var/log/system.log) >/var/www/magento245/var/log/system.log
+        echo $(tail -5000 /var/www/magento245/var/log/cron.log) >/var/www/magento245/var/log/cron.log
+        echo $(tail -5000 /var/www/magento245/var/log/debug.log) >/var/www/magento245/var/log/debug.log
+    SHELL
 end

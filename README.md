@@ -115,6 +115,7 @@ end
 - [Magento Frontend (http://www.magento245.store)](http://www.magento245.store)
 - [Magento Backend (http://www.magento245.store/admin)](http://www.magento245.store/admin)
 - [Adminer (http://adminer.magento245.store)](http://adminer.magento245.store)
+- [MailHog (http://www.magento245.store:8025)](http://www.magento245.store:8025)
 
 ## Some of the Vagrant Box Screenshots
 
