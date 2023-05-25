@@ -56,7 +56,12 @@ Add the following entry to a new line:
 > Note: On Windows, the hosts file is located at: c:\Windows\System32\Drivers\etc\hosts
 
 ## Remember
-Remember to change the `auth.json` file on the Magento Root Folder, Else Magento Specific Composer commands will not work
+Remember to change the `auth.json` file keys on the Magento Root Folder, Else Magento Specific Composer commands will not work
+
+Keys look like :-
+
+- **Public Key**: 5d370b076708477e1cf3b9a14856a522
+- **Private Key**: 54e2dc13ar780bc45496e1ba312e8342
 
 ## Vagrant Configuration
 
