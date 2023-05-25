@@ -34,16 +34,12 @@ Please change the `config.vm.network "private_network", ip: "192.168.2.183"` to 
 for controlling VirtualBox. The command and stderr is shown below.
 Command: ["startvm", "30eed00a-68d8-4c2b-803b-c5faf04c708d", "--type", "headless"]
 
-Move to directory:
-
-```bash
-cd /sbin/
-```
-
 Run script:
 ```bash
-sudo ./vboxconfig
+sudo /sbin/vboxconfig
 ```
+
+> If still error persists, Remove virtualbox and reinstall it.
 
 ## Change your Host Settings
 On MacOS and Linux, open the hosts file (/etc/hosts) with elevated privileges:
