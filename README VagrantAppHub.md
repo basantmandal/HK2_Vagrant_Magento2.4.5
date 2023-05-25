@@ -22,6 +22,7 @@ VirtualBox 7.x
 ## Credentials
 - Ubuntu UserName/Password :- vagrant/vagrant
 - MySQL :- admin/admin
+- Magento Admin :- admin/admin@12345
 
 ## Error 
 
