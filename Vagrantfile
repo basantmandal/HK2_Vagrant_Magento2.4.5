@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
     config.vm.box = "basantmandal/HK2_Vagrant_Magento2.4.5"
-    #config.vm.box_version = "1.0.1"
+    config.vm.box_version = "1.0.1"
     config.vm.network "private_network", ip: "192.168.2.183"
 
     # Default HTTP port
@@ -35,10 +35,10 @@ Vagrant.configure("2") do |config|
     # config.vm.synced_folder "/var/www/magento245/app/code", "/var/www/magento245/app/code", owner: "vagrant", group: "www-data"
 
     # Provision - Clean Magento Logs
-    config.vm.provision "shell", privileged: true, inline: <<-SHELL
-        echo $(tail -5000 /var/www/magento245/var/log/exception.log) >/var/www/magento245/var/log/exception.log
-        echo $(tail -5000 /var/www/magento245/var/log/system.log) >/var/www/magento245/var/log/system.log
-        echo $(tail -5000 /var/www/magento245/var/log/cron.log) >/var/www/magento245/var/log/cron.log
-        echo $(tail -5000 /var/www/magento245/var/log/debug.log) >/var/www/magento245/var/log/debug.log
-    SHELL
+    # config.vm.provision "shell", privileged: true, inline: <<-SHELL
+    #     echo $(tail -5000 /var/www/magento245/var/log/exception.log) >/var/www/magento245/var/log/exception.log
+    #     echo $(tail -5000 /var/www/magento245/var/log/system.log) >/var/www/magento245/var/log/system.log
+    #     echo $(tail -5000 /var/www/magento245/var/log/cron.log) >/var/www/magento245/var/log/cron.log
+    #     echo $(tail -5000 /var/www/magento245/var/log/debug.log) >/var/www/magento245/var/log/debug.log
+    # SHELL
 end
