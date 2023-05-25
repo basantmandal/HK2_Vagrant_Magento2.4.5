@@ -30,6 +30,21 @@ allowed ranges`
 
 Please change the `config.vm.network "private_network", ip: "192.168.2.183"` to the the allowed ranges IP and run the command again
 
+> There was an error while executing `VBoxManage`, a CLI used by Vagrant
+for controlling VirtualBox. The command and stderr is shown below.
+Command: ["startvm", "30eed00a-68d8-4c2b-803b-c5faf04c708d", "--type", "headless"]
+
+Move to directory:
+
+```bash
+cd /sbin/
+```
+
+Run script:
+```bash
+sudo ./vboxconfig
+```
+
 ## Change your Host Settings
 On MacOS and Linux, open the hosts file (/etc/hosts) with elevated privileges:
 sudo nano /etc/hosts
