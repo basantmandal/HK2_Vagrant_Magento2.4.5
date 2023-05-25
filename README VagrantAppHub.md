@@ -4,7 +4,8 @@
 This Box is fully compatible for Magento 2.4.5. Includes Screenshot and Vagrantfile on how to use it. Detailed Information can be found at - [https://github.com/basantmandal/HK2_Vagrant_Magento2.4.5](https://github.com/basantmandal/HK2_Vagrant_Magento2.4.5)
 
 ## Prerequisites
-Vagrant
+Vagrant 2.3.x
+VirtualBox 7.x
 
 ## Box Contains :- 
 - Ubuntu 22.04
