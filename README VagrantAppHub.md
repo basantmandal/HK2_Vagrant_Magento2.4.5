@@ -23,6 +23,13 @@ VirtualBox 7.x
 - Ubuntu UserName/Password :- vagrant/vagrant
 - MySQL :- admin/admin
 
+## Error 
+
+> You may get `The IP address configured for the host-only network is not within the
+allowed ranges`
+
+Please change the `config.vm.network "private_network", ip: "192.168.2.183"` to the the allowed ranges IP and run the command again
+
 ## Change your Host Settings
 On MacOS and Linux, open the hosts file (/etc/hosts) with elevated privileges:
 sudo nano /etc/hosts
