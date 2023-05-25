@@ -1,7 +1,10 @@
 # HK2 Vagrant Magento2.4.5
 
 ## Introduction
-This Box is fully compatible for Magento 2.4.5. Includes Screenshot and Vagrantfile on how to use it.
+This Box is fully compatible for Magento 2.4.5. Includes Screenshot and Vagrantfile on how to use it. Detailed Information can be found at - [https://github.com/basantmandal/HK2_Vagrant_Magento2.4.5](https://github.com/basantmandal/HK2_Vagrant_Magento2.4.5)
+
+## Prerequisites
+Vagrant
 
 ## Box Contains :- 
 - Ubuntu 22.04
@@ -17,6 +20,20 @@ This Box is fully compatible for Magento 2.4.5. Includes Screenshot and Vagrantf
 ## Credentials
 - Ubuntu UserName/Password :- vagrant/vagrant
 - MySQL :- admin/admin
+
+## Change your Host Settings
+On MacOS and Linux, open the hosts file (/etc/hosts) with elevated privileges:
+sudo nano /etc/hosts
+
+Add the following entry to a new line:
+
+```bash
+192.168.2.183 www.magento245.store
+192.168.2.183 adminer.magento245.store
+```
+
+> Note: On Windows, the hosts file is located at: c:\Windows\System32\Drivers\etc\hosts
+
 
 ## Remember
 Remember to change the `auth.json` file on the Magento Root Folder, Else Magento Specific Composer commands will not work
@@ -70,24 +87,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-## Sample Vagrant File
-
-- [Click to see the Vagrantfile](./Vagrantfile)
-
 ## Links
-
 - [Magento Frontend (http://www.magento245.store)](http://www.magento245.store)
 - [Magento Backend (http://www.magento245.store/admin)](http://www.magento245.store/admin)
 - [Adminer (http://adminer.magento245.store)](http://adminer.magento245.store)
-
-## Some of the Vagrant Box Screenshots
-
-[![Adminer Login](dist/image/adminer_login.png)]()
-
-[![Adminer Database](dist/image/adminer_database.png)]()
-
-[![Magento Frontend](dist/image/magento_frontend.png)]()
-
-[![Magento Admin](dist/image/magento_admin.png)]()
-
-[![Magento Admin Dashboard](dist/image/magento_admin_dashboard.png)]()
